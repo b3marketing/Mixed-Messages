@@ -8,6 +8,7 @@ const getRandomVal = arr => {
     return arr[randNum];
 }
 
+// Create a regular expression with the value passed in and use it to replace all occurances in the string passed in.
 const replaceVals = (sourceStr, findVal, replaceStr) => {
     const searchExp = new RegExp(findVal, 'g');
     let newStr = sourceStr.replace(searchExp, replaceStr);
